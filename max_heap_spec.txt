@@ -1,0 +1,21 @@
+class heap { // Max-Heap class
+
+private
+ELEM* Heap; // Pointer to the heap array
+int size; // Maximum size of the heap
+int n; // Number of elements now in the heap
+void siftdown(int) // Put an element in its correct place ~
+max-heapify(int)
+
+public:
+heap(ELEM*, int, int); // Constructor
+int heapsize() const; // Return current size of the heap
+bool isLeaf(int) const; // TRUE if pos is a leaf position
+int leftChild(int) const; // Return position for left child
+int rightChild(int) const; // Return position for right child
+int parent(int) const; // Return position for parent
+void insert(const ELEM); // Insert value into heap
+ELEM removemax(); // Remove maximum value
+ELEM remove(int); // Remove value at specified position
+void buildheap(); // Heapify contents of heap
+};
